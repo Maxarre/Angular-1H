@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';  // Add this
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule       // add this
+    FormsModule,
+    HttpClientModule   // Add here
   ],
   providers: [],
   bootstrap: [AppComponent]
