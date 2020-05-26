@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
+
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _http: HttpService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this._http.myMethod();
   }
 
 }
